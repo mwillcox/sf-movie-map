@@ -1,5 +1,7 @@
 # SF Movie Map
 
+![alt tag](http://imgur.com/a/qcgD8)
+
 -The SF Movie Map creates a way to visualize where moveies were filmed in San Francisco and the Bay Area, and details on those movies.
 
 -Focused on full stack
