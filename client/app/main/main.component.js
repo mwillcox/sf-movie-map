@@ -5,7 +5,6 @@ import ngMap from 'ngMap';
 
 
 export class MainController {
-  
   /*@ngInject*/
   constructor($http, NgMap) {
     this.$http = $http;
@@ -15,26 +14,22 @@ export class MainController {
     this.NgMap = NgMap;
     this.map = {}; 
   }
-
   $onInit() {
     var vm = this;
-    this.NgMap.getMap().then((map)=> {
+    this.NgMap.getMap().then((map) => {
       this.map = map;
     });
-
     var promise = this.getFilms();
-    
     promise.then(
-      function(value){
-        angular.forEach(value, function(location){
-          vm.films.push({id:location._id, name: location.Title, position:[location.Lat, location.Long], loc:location.Locations, director:location.Director});
-        });
-        
-        if(vm.films.length>0){
-          vm.film = vm.films[0];
-        }
-      },
-      function (reason) { console.log(reason) }
+    function(value){
+      angular.forEach(value, function(location){
+        vm.films.push({ id:location._id, name: location.Title, position: [location.Lat, location.Long], loc: location.Locations, director: location.Director});
+      });
+      if(vm.films.length>0){
+        vm.film = vm.films[0];
+      }
+    },
+    function (reason) { console.log(reason) }
     );
   }
 

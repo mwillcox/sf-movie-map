@@ -1,28 +1,12 @@
 # sf-movie-map
 
-This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.0.5.
+-The SF Movie Map creates a way to visualize where moveies were filmed in San Francisco and the Bay Area, and details on those movies.
 
-## Getting Started
+-Focused on full stack
 
-### Prerequisites
+-Chose to utilize the MEAN Stack because of my familiarity with javascript web development. Used the [Angular Fullstack Generator](https://github.com/angular-fullstack/generator-angular-fullstack) for this app and most of my code is in the app/main and server/api/film directories. I spent a lot of time working on programmatically figuring out how to geolocate the location strings in the datasource, and I would like to refactor that to more efficently do that, and have all of that logic on the server side. As for the front end I had some issues with making the marker info box being dynamic, and implementing the search field functionality. If I have more time I would like to try another map directive out and clean up the controller. I have not used ES6/Babel before so I know there is a lot more efficent ways to improve that.
 
-- [Git](https://git-scm.com/)
-- [Node.js and npm](nodejs.org) Node >= 4.x.x, npm >= 2.x.x
-- [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
-- [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
+## Portfolio
 
-### Developing
-
-1. Run `npm install` to install server dependencies.
-
-2. Run `mongod` in a separate shell to keep an instance of the MongoDB Daemon running
-
-3. Run `gulp serve` to start the development server. It should automatically open the client in your browser when ready.
-
-## Build & development
-
-Run `gulp build` for building and `gulp serve` for preview.
-
-## Testing
-
-Running `npm test` will run the unit tests with karma.
+- [My Website](http://michellewillcox.com/)
+- [Heroku- attempted to host here but having some issues](https://ancient-castle-67597.herokuapp.com/)
